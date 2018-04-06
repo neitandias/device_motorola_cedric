@@ -262,7 +262,6 @@ VENDOR_SECURITY_PATCH := 2018-10-01
 
 # VNDK
 BOARD_VNDK_VERSION := current
-PRODUCT_USE_VNDK_OVERRIDE := false
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
