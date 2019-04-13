@@ -19,18 +19,17 @@
 $(call inherit-product, device/motorola/cedric/full_cedric.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/prisma/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
-
+TARGET_BOOT_ANIMATION_RES := 1080
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cedric
-PRODUCT_NAME := prisma_cedric
+PRODUCT_NAME := dot_cedric
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-CUSTOM_BUILD_TYPE := OFFICIAL
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
@@ -38,4 +37,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cedric-user 8.1.0 OPPS28.85-13-2 d04a4 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/cedric/cedric:8.1.0/OPPS28.85-13-2/d04a4:user/release-keys
+BUILD_FINGERPRINT := google/walleye/walleye:9/PQ1A.190105.004/5148680:user/release-keys
