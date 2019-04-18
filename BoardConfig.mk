@@ -258,6 +258,7 @@ USE_DEVICE_SPECIFIC_THERMAL := true
 VENDOR_SECURITY_PATCH := 2018-10-01
 
 # VNDK
+BOARD_VNDK_VERSION := current
 PRODUCT_USE_VNDK_OVERRIDE := false
 
 # Use mke2fs to create ext4 images
