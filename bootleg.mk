@@ -19,7 +19,7 @@
 $(call inherit-product, device/motorola/cedric/full_cedric.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -27,7 +27,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cedric
-PRODUCT_NAME := dot_cedric
+PRODUCT_NAME := bootleg_cedric
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_ENFORCE_RRO_TARGETS := \
@@ -38,3 +38,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/walleye/walleye:9/PQ1A.190105.004/5148680:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+PRODUCT_NAME="Moto G5" \
+DEVICE_MAINTAINERS="Zilberto Junior (ZJRDroid)"
+
+export BOOTLEGGERS_BUILD_TYPE=Shishufied
+TARGET_PICK_BOOTANIMATION := 0,1,3
