@@ -231,7 +231,8 @@ include device/qcom/sepolicy/sepolicy.mk
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-
+PRODUCT_VENDOR_MOVE_ENABLE := true
+ 
 # Sensor
 BOARD_USES_MOT_SENSOR_HUB := true
 BOARD_USES_CAP_SENSOR_SX9310 := true
